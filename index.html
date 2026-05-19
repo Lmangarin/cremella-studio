@@ -1,418 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cremella Studio — handcrafted art &amp; crafts inspired by creativity and cats. Explore original works, workshops, and unique handmade items." />
-  <title>Cremella Studio · Art &amp; Crafts</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cremella Studio | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Cremella Studio</h1>
+      <p class="tagline">Learning the programming world one project at a time.</p>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- ===== Navigation ===== -->
-  <nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="#home" class="nav-logo">Cremella <span>Studio</span></a>
-
-      <ul class="nav-links" role="list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#workshops">Workshops</a></li>
-        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
-      </ul>
-
-      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ===== Hero ===== -->
-  <section class="hero" id="home">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <span class="section-label">✦ Handmade with love</span>
-        <h1 class="hero-title">
-          Where <em>Creativity</em><br>Comes to Life
-        </h1>
-        <p class="hero-lead">
-          Cremella Studio is a cozy corner for art, crafts, and handmade wonders —
-          inspired by the curious spirit of three cats: Creme, Cruella &amp; Chogath.
-        </p>
-        <div class="hero-actions">
-          <a href="#gallery" class="btn btn-primary">Explore the Gallery</a>
-          <a href="#workshops" class="btn btn-outline">Join a Workshop</a>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-art">🎨</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section class="about" id="about">
-    <div class="container about-inner">
-
-      <div class="about-cards" aria-label="Studio highlights">
-        <div class="about-card">
-          <div class="about-card-icon">🖌️</div>
-          <h3>Original Art</h3>
-          <p>Paintings, illustrations, and mixed-media works created in the studio.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">🧶</div>
-          <h3>Handmade Crafts</h3>
-          <p>Knitted goods, embroidery, and fibre arts crafted with care.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">🪴</div>
-          <h3>Nature Inspired</h3>
-          <p>Botanical themes, earthy palettes, and organic textures throughout.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">🏺</div>
-          <h3>Ceramics</h3>
-          <p>Hand-thrown pottery and sculpted pieces, each one unique.</p>
-        </div>
-      </div>
-
-      <div class="about-text">
-        <span class="section-label">✦ Our Story</span>
-        <h2 class="section-title">A Studio Born from Curiosity</h2>
-        <p class="section-subtitle">
-          Cremella Studio started as a personal creative journey — learning the
-          programming world one project at a time, while celebrating art in every form.
-          Every piece carries the playful, inquisitive energy of our three muses.
-        </p>
-
-        <div class="about-cats" aria-label="Our cat muses">
-          <div class="cat-badge">🐱 Creme</div>
-          <div class="cat-badge">🐈‍⬛ Cruella</div>
-          <div class="cat-badge">🐾 Chogath</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== Gallery ===== -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <header class="gallery-header">
-        <span class="section-label">✦ Portfolio</span>
-        <h2 class="section-title">Studio Gallery</h2>
-        <p class="section-subtitle">
-          Browse our collection of original works. Click any piece to learn more.
-        </p>
-      </header>
-
-      <div class="gallery-filters" role="group" aria-label="Filter gallery">
-        <button class="filter-btn active" data-filter="all">All Works</button>
-        <button class="filter-btn" data-filter="painting">Painting</button>
-        <button class="filter-btn" data-filter="crafts">Crafts</button>
-        <button class="filter-btn" data-filter="ceramics">Ceramics</button>
-        <button class="filter-btn" data-filter="illustration">Illustration</button>
-      </div>
-
-      <div class="gallery-grid">
-
-        <article class="gallery-item" data-category="painting" tabindex="0" role="button" aria-label="View Golden Hour painting">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#f9d976,#f39f86);">🌅</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Painting</span>
-            <h3>Golden Hour</h3>
-            <p>Acrylic on canvas, warm sunset tones with textured sky.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="crafts" tabindex="0" role="button" aria-label="View Moonlit Knit piece">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#a8c5da,#6b8fa3);">🌙</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Crafts</span>
-            <h3>Moonlit Knit</h3>
-            <p>Hand-knitted merino wool throw in midnight blue and ivory.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="ceramics" tabindex="0" role="button" aria-label="View Forest Bowl ceramic">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#b7d7a8,#6b9e6a);">🌿</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Ceramics</span>
-            <h3>Forest Bowl</h3>
-            <p>Wheel-thrown stoneware with a celadon glaze and leaf imprint.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="illustration" tabindex="0" role="button" aria-label="View Cat Chronicles illustration">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#f5cba7,#eb9234);">🐱</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Illustration</span>
-            <h3>Cat Chronicles</h3>
-            <p>Ink &amp; watercolour portraits of Creme, Cruella and Chogath.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="painting" tabindex="0" role="button" aria-label="View Botanical Study painting">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#d4e6b5,#7b9e7c);">🌱</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Painting</span>
-            <h3>Botanical Study</h3>
-            <p>Watercolour series exploring leaves, moss, and ferns.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="crafts" tabindex="0" role="button" aria-label="View Embroidered Meadow piece">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#fce4ec,#e91e63);">🌸</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Crafts</span>
-            <h3>Embroidered Meadow</h3>
-            <p>Floral hoop art with silk thread on linen ground.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="ceramics" tabindex="0" role="button" aria-label="View Terracotta Mugs set">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#f4c19c,#c97d4e);">☕</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Ceramics</span>
-            <h3>Terracotta Mugs</h3>
-            <p>Set of two hand-built mugs with speckled matte glaze.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="illustration" tabindex="0" role="button" aria-label="View Midnight Garden illustration">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#2c3e50,#8e44ad);">🌙</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Illustration</span>
-            <h3>Midnight Garden</h3>
-            <p>Digital illustration in deep jewel tones, printed on fine art paper.</p>
-          </div>
-        </article>
-
-        <article class="gallery-item" data-category="painting" tabindex="0" role="button" aria-label="View Rainy Day Abstract painting">
-          <div class="gallery-thumb" style="background: linear-gradient(135deg,#b0c4de,#4a6fa5);">🌧️</div>
-          <div class="gallery-info">
-            <span class="gallery-tag">Painting</span>
-            <h3>Rainy Day Abstract</h3>
-            <p>Fluid acrylic pour with cool blues and soft greys.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Lightbox ===== -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title">
-    <div class="lightbox-content">
-      <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
-      <div class="lightbox-emoji" id="lb-emoji" aria-hidden="true"></div>
-      <span class="gallery-tag" id="lb-tag"></span>
-      <h2 class="lightbox-title" id="lb-title"></h2>
-      <p class="lightbox-desc" id="lb-desc"></p>
-      <a href="#contact" class="btn btn-primary" onclick="document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow='';">Enquire about this piece</a>
-    </div>
-  </div>
-
-  <!-- ===== Workshops ===== -->
-  <section class="workshops" id="workshops">
-    <div class="container">
-      <header class="workshops-header">
-        <span class="section-label">✦ Learn &amp; Create</span>
-        <h2 class="section-title">Studio Workshops</h2>
-        <p class="section-subtitle">
-          Small-group, hands-on sessions for all skill levels. Take home something you made yourself.
-        </p>
-      </header>
-
-      <div class="workshops-grid">
-
-        <div class="workshop-card">
-          <div class="workshop-icon">🖌️</div>
-          <h3>Watercolour Basics</h3>
-          <p>Learn colour mixing, wet-on-wet technique and simple botanical compositions. No experience needed.</p>
-          <div class="workshop-meta">
-            <span>📅 Every Saturday</span>
-            <span>⏱ 2.5 hrs</span>
-            <span>👥 Max 8</span>
-          </div>
-          <div class="workshop-price">€35 <small>/ person · materials included</small></div>
-          <a href="#contact" class="btn btn-primary">Reserve a Spot</a>
-        </div>
-
-        <div class="workshop-card">
-          <div class="workshop-icon">🏺</div>
-          <h3>Intro to Hand-Building</h3>
-          <p>Pinch pots, coil-building, and slab work. Your pieces are kiln-fired and ready to collect two weeks later.</p>
-          <div class="workshop-meta">
-            <span>📅 Bi-weekly Sunday</span>
-            <span>⏱ 3 hrs</span>
-            <span>👥 Max 6</span>
-          </div>
-          <div class="workshop-price">€55 <small>/ person · clay &amp; firing included</small></div>
-          <a href="#contact" class="btn btn-primary">Reserve a Spot</a>
-        </div>
-
-        <div class="workshop-card">
-          <div class="workshop-icon">🧶</div>
-          <h3>Beginners' Crochet</h3>
-          <p>Start from a slip knot and leave with a finished coaster or small pouch. Yarn and hook provided.</p>
-          <div class="workshop-meta">
-            <span>📅 Tuesdays</span>
-            <span>⏱ 2 hrs</span>
-            <span>👥 Max 10</span>
-          </div>
-          <div class="workshop-price">€25 <small>/ person · kit included</small></div>
-          <a href="#contact" class="btn btn-primary">Reserve a Spot</a>
-        </div>
-
-        <div class="workshop-card">
-          <div class="workshop-icon">🌸</div>
-          <h3>Embroidery Sampler</h3>
-          <p>Six classic stitches on one beautiful hoop — satin stitch, French knots, lazy daisy and more.</p>
-          <div class="workshop-meta">
-            <span>📅 Monthly Friday</span>
-            <span>⏱ 3 hrs</span>
-            <span>👥 Max 8</span>
-          </div>
-          <div class="workshop-price">€40 <small>/ person · hoop &amp; thread included</small></div>
-          <a href="#contact" class="btn btn-primary">Reserve a Spot</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Contact ===== -->
-  <section class="contact" id="contact">
-    <div class="container contact-inner">
-
-      <div class="contact-info">
-        <span class="section-label">✦ Say Hello</span>
-        <h2 class="section-title">Get in Touch</h2>
-        <p>
-          Whether you'd like to enquire about a piece, book a workshop, or just say hello —
-          we'd love to hear from you.
-        </p>
-        <ul class="contact-details">
-          <li><span>📍</span> <span>The Creative Quarter, Studio 7</span></li>
-          <li><span>📧</span> <a href="mailto:hello@cremellastudio.art">hello@cremellastudio.art</a></li>
-          <li><span>📱</span> <span>+39 02 1234 5678</span></li>
-          <li><span>🕐</span> <span>Tue–Sun · 10:00 – 18:00</span></li>
+    <main>
+      <section>
+        <h2>My Deployed Projects</h2>
+        <p>Visit my other websites:</p>
+        <ul class="project-links">
+          <li>
+            <a href="https://lmangarin.github.io/fashion-blog-market/" target="_blank" rel="noreferrer noopener" aria-label="Fashion Blog and Market (opens in new tab)">
+              Fashion Blog &amp; Market
+            </a>
+          </li>
+          <li>
+            <a href="https://lmangarin.github.io/creative-arts-market/" target="_blank" rel="noreferrer noopener" aria-label="Creative Arts Market (opens in new tab)">
+              Creative Arts &amp; Market
+            </a>
+          </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="contact-form">
-        <form id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">I'm interested in…</label>
-            <select id="subject" name="subject">
-              <option value="">Select a topic</option>
-              <option value="artwork">Purchasing artwork</option>
-              <option value="workshop">Booking a workshop</option>
-              <option value="commission">Commission a piece</option>
-              <option value="other">Something else</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us more…" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-            Send Message ✉️
-          </button>
-        </form>
-
-        <div class="form-success" id="form-success" role="status">
-          <div class="success-icon">🎉</div>
-          <h3>Message Sent!</h3>
-          <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+      <section>
+        <h2>Cat Gallery</h2>
+        <p>My lovely cats: Creme, Cruella, and Chogath.</p>
+        <div class="cat-gallery">
+          <article class="cat-card">
+            <h3>Creme</h3>
+            <p>Soft, curious, and always ready for a nap in the sun.</p>
+          </article>
+          <article class="cat-card">
+            <h3>Cruella</h3>
+            <p>Confident and playful with a dramatic personality.</p>
+          </article>
+          <article class="cat-card">
+            <h3>Chogath</h3>
+            <p>A gentle giant with a big appetite and a bigger heart.</p>
+          </article>
         </div>
-      </div>
+      </section>
+    </main>
 
-    </div>
-  </section>
+    <footer>
+      <small>&copy; <span id="year"></span> Cremella Studio</small>
+    </footer>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <div class="footer-brand">
-          <a href="#home" class="nav-logo">Cremella <span>Studio</span></a>
-          <p>A cozy creative space for handmade art &amp; crafts, guided by curiosity and three very opinionated cats.</p>
-          <div class="footer-social" aria-label="Social media links">
-            <a href="#" aria-label="Instagram">📸</a>
-            <a href="#" aria-label="Pinterest">📌</a>
-            <a href="#" aria-label="Etsy">🛍️</a>
-            <a href="#" aria-label="YouTube">▶️</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#workshops">Workshops</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Create</h4>
-          <ul>
-            <li><a href="#workshops">Watercolour</a></li>
-            <li><a href="#workshops">Ceramics</a></li>
-            <li><a href="#workshops">Crochet</a></li>
-            <li><a href="#workshops">Embroidery</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Info</h4>
-          <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Commissions</a></li>
-            <li><a href="#contact">Gift Vouchers</a></li>
-            <li><a href="#contact">FAQ</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Cremella Studio. Made with ❤️ and lots of cat hair.</p>
-        <div class="footer-cats" aria-label="Our cats">
-          <span title="Creme">🐱</span>
-          <span title="Cruella">🐈‍⬛</span>
-          <span title="Chogath">🐾</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
