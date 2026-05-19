@@ -9,4 +9,4 @@ This repository now includes a simple static portfolio website with:
 - Bio page
 - Contact page
 
-Open `/home/runner/work/cremella-studio/cremella-studio/index.html` in a browser to view it.
+Open `index.html` in a browser to view it.
