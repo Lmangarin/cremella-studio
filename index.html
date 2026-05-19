@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cremella Studio | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Cremella Studio</h1>
+      <p class="tagline">Learning the programming world one project at a time.</p>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>My Deployed Projects</h2>
+        <p>Visit my other websites:</p>
+        <ul class="project-links">
+          <li>
+            <a href="https://example.com/fashion-blog-market" target="_blank" rel="noreferrer noopener">
+              Fashion Blog &amp; Market
+            </a>
+          </li>
+          <li>
+            <a href="https://example.com/creative-arts-market" target="_blank" rel="noreferrer noopener">
+              Creative Arts &amp; Market
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cat Gallery</h2>
+        <p>My lovely cats: Creme, Cruella, and Chogath.</p>
+        <div class="cat-gallery" role="list" aria-label="Gallery of cats">
+          <article role="listitem" class="cat-card">
+            <h3>Creme</h3>
+            <p>Soft, curious, and always ready for a nap in the sun.</p>
+          </article>
+          <article role="listitem" class="cat-card">
+            <h3>Cruella</h3>
+            <p>Confident and playful with a dramatic personality.</p>
+          </article>
+          <article role="listitem" class="cat-card">
+            <h3>Chogath</h3>
+            <p>A gentle giant with a big appetite and a bigger heart.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; <span id="year"></span> Cremella Studio</small>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
